@@ -43,5 +43,10 @@ app.MapControllerRoute(
     pattern: "staff",
     defaults: new { controller = "Menu", action = "Staff" });
 
+app.MapControllerRoute(
+    name: "details",
+    pattern: "details",
+    defaults: new { controller = "Menu", action = "details" });
+
 
 app.Run();

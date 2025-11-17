@@ -1,4 +1,5 @@
-﻿namespace project1.Models
+﻿
+namespace project1.Models
 {
     public class MockStaffRepository : IStaffInterface
     {
@@ -15,6 +16,12 @@
             };
             
         }
+
+        public IEnumerable<Staff> GetAll()
+        {
+            return _staffList;
+        }
+
         Staff IStaffInterface.GetStaffById(int id)
         {
             return _staffList.FirstOrDefault(s => s.Id == id);

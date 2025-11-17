@@ -1,0 +1,31 @@
+﻿@model project1.Models.Staff
+
+
+<div class="text-center">
+
+    <h1 class="display-4">detailsdan salom</h1>    
+<!--
+
+   
+@{ 
+    var staff = ViewData["staf"] as project1.Models.Staff; 
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>Staff ID: @staff.Id</p>
+<p>Staff Name: @staff.firstName @staff.lastName</p>
+<p>Staff Position: @staff.department</p>
+<p>Staff email: @staff.email</p>
+
+-->
+<h2>Staff Details</h2>
+
+<div class="staff-details">
+    <p><strong>Staff ID:</strong> @Model.Id</p>
+    <p><strong>Staff Name:</strong> @Model.firstName @Model.lastName</p>
+    <p><strong>Position:</strong> @Model.department</p>
+    <p><strong>Email:</strong> @Model.email</p>
+</div>
+
+</div

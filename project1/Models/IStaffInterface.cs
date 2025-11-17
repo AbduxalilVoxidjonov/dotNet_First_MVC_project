@@ -4,6 +4,7 @@
     {
         Staff GetStaffById(int id);
 
+        IEnumerable<Staff> GetAll();
 
     }
 }
